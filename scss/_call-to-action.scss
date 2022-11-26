@@ -1,0 +1,78 @@
+$text-color: #FFFFFF;
+
+.call-to-action {
+    background-image: url("../assets/img/call-to-action-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 16.2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-family: 'Jost';
+}
+
+.call-to-action__title {
+    color: $text-color;
+    margin: 0;
+
+    text-align: center;
+    font-weight: 600;
+}
+
+.call-to-action__paragraph {
+    text-align: center;
+    color: $text-color;
+    font-weight: 400;
+}
+
+.call-to-action__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+
+    margin-top: 30px;
+}
+
+.call-to-action__button {
+    display: block;
+
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.call-to-action__whatsapp-button {
+    background-color: #F93264;
+    color: $text-color;
+}
+
+.call-to-action__telegram-button {
+    background-color: $text-color;
+    color: #3D3D3D;
+}
+
+.call-to-action__telegram-button:hover,
+.call-to-action__whatsapp-button:hover {
+    background-color:#00213C;
+    transition:all 0.3s ease;
+}
+
+.call-to-action__telegram-button:hover {
+    color: $text-color;
+}
+
+@media (max-width: 767px) {
+    .call-to-action {
+        height: 20em;
+    }
+
+    .call-to-action__buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
